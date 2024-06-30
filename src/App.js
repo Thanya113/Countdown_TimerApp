@@ -53,6 +53,7 @@ function App() {
     setTimeLeft(null);
     setMinutes('');
     setSeconds('');
+     setIntervalSeconds('');
     setTimerRunning(false);
   };
 
@@ -114,7 +115,7 @@ function App() {
               type="number"
               value={intervalSeconds}
               onChange={(e) => setIntervalSeconds(e.target.value)}
-              placeholder="Interval (seconds)"
+              placeholder="Interval(s)"
             />
             <br/>
             <button onClick={startTimer}>Start</button>
